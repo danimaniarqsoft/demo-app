@@ -1,0 +1,47 @@
+
+<div>
+    <h2><span data-translate="kukulkanmongoApp.persona.detail.title">Persona</span> {{vm.persona.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="kukulkanmongoApp.persona.id">id</span></dt>
+        <dd>
+			<span>{{vm.persona.id}}</span>
+		<dd>
+        <dt><span data-translate="kukulkanmongoApp.persona.nombre">nombre</span></dt>
+        <dd>
+			<span>{{vm.persona.nombre}}</span>
+		<dd>
+        <dt><span data-translate="kukulkanmongoApp.persona.primerApellido">primerApellido</span></dt>
+        <dd>
+			<span>{{vm.persona.primerApellido}}</span>
+		<dd>
+        <dt><span data-translate="kukulkanmongoApp.persona.segundoApellido">segundoApellido</span></dt>
+        <dd>
+			<span>{{vm.persona.segundoApellido}}</span>
+		<dd>
+        <dt><span data-translate="kukulkanmongoApp.persona.edad">edad</span></dt>
+        <dd>
+			<span>{{vm.persona.edad}}</span>
+		<dd>
+        <dt><span data-translate="kukulkanmongoApp.persona.correo">correo</span></dt>
+        <dd>
+			<span>{{vm.persona.correo}}</span>
+		<dd>
+        <dt><span data-translate="kukulkanmongoApp.persona.telefono">telefono</span></dt>
+        <dd>
+			<span>{{vm.persona.telefono}}</span>
+		<dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="persona-detail.edit({id:vm.persona.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

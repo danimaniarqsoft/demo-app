@@ -1,0 +1,26 @@
+{
+    "kukulkanmongoApp": {
+        "persona" : {
+            "home": {
+                "title": "personas",
+                "createLabel": "Create a new Persona",
+                "createOrEditLabel": "Create or edit a Persona"
+            },
+            "created": "A new Persona is created with identifier {{ param }}",
+            "updated": "A Persona is updated with identifier {{ param }}",
+            "deleted": "A Persona is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Persona {{ id }}?"
+            },
+            "detail": {
+                "title": "Persona"
+            },
+            "nombre": "Nombre", 
+            "primerApellido": "PrimerApellido", 
+            "segundoApellido": "SegundoApellido", 
+            "edad": "Edad", 
+            "correo": "Correo", 
+            "telefono": "Telefono"
+        }
+    }
+}

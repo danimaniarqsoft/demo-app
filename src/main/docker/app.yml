@@ -1,0 +1,14 @@
+version: '2'
+services:
+    kukulkanmongo-app:
+        image: kukulkanmongo
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATA_MONGODB_URI=mongodb://kukulkanmongo-mongodb:27017
+            - SPRING_DATA_MONGODB_DATABASE=kukulkanmongo
+        ports:
+            - 8080:8080
+    kukulkanmongo-mongodb:
+        extends:
+            file: mongodb.yml
+            service: kukulkanmongo-mongodb

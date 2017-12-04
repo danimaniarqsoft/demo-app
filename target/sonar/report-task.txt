@@ -1,0 +1,5 @@
+projectKey=mx.infotec.dads.mongo:kukulkanmongo
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/mx.infotec.dads.mongo:kukulkanmongo
+ceTaskId=AWAihNOU4YwpKfKbkai7
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWAihNOU4YwpKfKbkai7

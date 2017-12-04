@@ -1,0 +1,60 @@
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myPersonaLabel" data-translate="kukulkanmongoApp.persona.home.createOrEditLabel">Create or edit a Persona</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.persona.id">
+            <label for="id" data-translate="global.field.id">id</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.persona.id" readonly />
+        </div>
+			<div class="form-group">
+				<label class="control-label" data-translate="kukulkanmongoApp.persona.nombre"
+					for="field_nombre">nombre</label>
+				<input type="text" class="form-control" name="nombre" id="field_nombre"
+					ng-model="vm.persona.nombre" />
+			</div>
+			<div class="form-group">
+				<label class="control-label" data-translate="kukulkanmongoApp.persona.primerApellido"
+					for="field_primerApellido">primerApellido</label>
+				<input type="text" class="form-control" name="primerApellido" id="field_primerApellido"
+					ng-model="vm.persona.primerApellido" />
+			</div>
+			<div class="form-group">
+				<label class="control-label" data-translate="kukulkanmongoApp.persona.segundoApellido"
+					for="field_segundoApellido">segundoApellido</label>
+				<input type="text" class="form-control" name="segundoApellido" id="field_segundoApellido"
+					ng-model="vm.persona.segundoApellido" />
+			</div>
+			<div class="form-group">
+				<label class="control-label" data-translate="kukulkanmongoApp.persona.edad"
+					for="field_edad">edad</label>
+				<input type="number" class="form-control" name="edad" id="field_edad"
+					ng-model="vm.persona.edad" />
+			</div>
+			<div class="form-group">
+				<label class="control-label" data-translate="kukulkanmongoApp.persona.correo"
+					for="field_correo">correo</label>
+				<input type="text" class="form-control" name="correo" id="field_correo"
+					ng-model="vm.persona.correo" />
+			</div>
+			<div class="form-group">
+				<label class="control-label" data-translate="kukulkanmongoApp.persona.telefono"
+					for="field_telefono">telefono</label>
+				<input type="text" class="form-control" name="telefono" id="field_telefono"
+					ng-model="vm.persona.telefono" />
+			</div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

@@ -1,0 +1,25 @@
+{
+    "kukulkanmongoApp": {
+        "producto" : {
+            "home": {
+                "title": "productos",
+                "createLabel": "Crear nuevo Producto",
+                "createOrEditLabel": "Crear o editar Producto",
+                "search": "Buscar Producto"
+            },
+            "created": "Un nuevo Producto ha sido creado con el identificador {{ param }}",
+            "updated": "Un Producto ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Producto ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Producto {{ id }}?"
+            },
+            "detail": {
+                "title": "Producto"
+            },
+            "nombre": "Nombre", 
+            "imagen": "Imagen", 
+            "imagenContentType": "ImagenContentType", 
+            "descripcion": "Descripcion"
+        }
+    }
+}
